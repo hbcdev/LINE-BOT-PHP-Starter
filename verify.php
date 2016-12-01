@@ -13,4 +13,3 @@ $result = curl_exec($ch);
 curl_close($ch);
 
 echo $result;
-โด
