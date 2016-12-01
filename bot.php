@@ -4,7 +4,6 @@ $proxy = 'velodrome.usefixie.com:80';
 $proxyauth = 'fixie:lE4BKQBXEJwHZCU';
 
 
-
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
