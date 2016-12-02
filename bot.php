@@ -7,11 +7,14 @@ $proxyauth = 'fixie:lE4BKQBXEJwHZCU';
 
 // Get POST body content
 $content = file_get_contents('php://input');
+echo $content;
 
-//$content = parse_str(file_get_contents("php://input"), $_POST);
 
 // Parse JSON
 $events = json_decode($content, true);
+
+echo $events;
+
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
 	// Loop through each event
