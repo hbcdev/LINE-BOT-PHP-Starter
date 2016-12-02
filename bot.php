@@ -5,7 +5,10 @@ $proxyauth = 'fixie:lE4BKQBXEJwHZCU';
 
 
 // Get POST body content
-$content = file_get_contents('php://input');
+//$content = file_get_contents('php://input');
+
+$content = parse_str(file_get_contents("php://input"), $_POST);
+
 // Parse JSON
 $events = json_decode($content, true);
 // Validate parsed JSON data
