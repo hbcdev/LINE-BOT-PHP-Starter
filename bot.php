@@ -4,11 +4,9 @@ $access_token = '+ecG0yQsz6cEwRLzk1xVb8w6UxsfsuzBedcochChB3Qs1HSsbt2NPCmUgSUQmdo
 $proxy = 'velodrome.usefixie.com:80';
 $proxyauth = 'fixie:lE4BKQBXEJwHZCU';
 
-
 // Get POST body content
 $content = file_get_contents('php://input');
 echo $content;
-
 
 // Parse JSON
 $events = json_decode($content, true);
